@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Google</title>
 </head>
 <body>
+
+    <main class="page">
+        <h1 class="logo">Google</h1>
+
+        <form id="search-form" class="search-bar">
+            <span class="icon">🔍</span>
+            <input type="text" id="search-input" placeholder="Google で検索または URL を入力" autocomplete="off">
+            <button type="button" class="icon-btn" title="音声検索">🎤</button>
+            <button type="button" class="icon-btn" title="画像で検索">📷</button>
+            <button type="button" class="ai-mode-btn">✨ AI モード</button>
+        </form>
+
+        <div class="shortcuts" id="shortcuts">
+            <div class="shortcut-item" id="add-shortcut-btn">
+                <div class="shortcut-icon add-icon">+</div>
+                <span>ショートカット...</span>
+            </div>
+        </div>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
