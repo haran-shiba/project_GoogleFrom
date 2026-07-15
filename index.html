@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Google</title>
 </head>
 <body>
@@ -12,10 +13,10 @@
         <h1 class="logo">Google</h1>
 
         <form id="search-form" class="search-bar">
-            <span class="icon">🔍</span>
+            <i class="fa-solid fa-magnifying-glass icon"></i>
             <input type="text" id="search-input" placeholder="Google で検索または URL を入力" autocomplete="off">
-            <button type="button" class="icon-btn" title="音声検索">🎤</button>
-            <button type="button" class="icon-btn" title="画像で検索">📷</button>
+            <button type="button" class="icon-btn" title="音声検索"><i class="fa-solid fa-microphone"></i></button>
+            <button type="button" class="icon-btn" title="画像で検索"><i class="fa-solid fa-camera"></i></button>
             <button type="button" class="ai-mode-btn">✨ AI モード</button>
         </form>
 
@@ -26,6 +27,23 @@
             </div>
         </div>
     </main>
+
+    <div class="modal-overlay hidden" id="shortcut-modal">
+        <div class="modal-box">
+            <h2 class="modal-title">ショートカットを追加</h2>
+
+            <label class="modal-label" for="shortcut-name-input">名前</label>
+            <input type="text" id="shortcut-name-input" class="modal-input">
+
+            <label class="modal-label" for="shortcut-url-input">URL</label>
+            <input type="text" id="shortcut-url-input" class="modal-input">
+
+            <div class="modal-actions">
+                <button type="button" class="modal-btn cancel-btn" id="cancel-btn">キャンセル</button>
+                <button type="button" class="modal-btn done-btn" id="done-btn" disabled>完了</button>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
