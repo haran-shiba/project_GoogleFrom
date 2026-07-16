@@ -1,4 +1,5 @@
 const searchForm = document.getElementById('search-form');
+const aiModeBtn = document.getElementById('ai-mode-btn');
 const addShortcutBtn = document.getElementById('add-shortcut-btn');
 const shortcutModal = document.getElementById('shortcut-modal');
 const cancelBtn = document.getElementById('cancel-btn');
@@ -8,6 +9,10 @@ const urlInput = document.getElementById('shortcut-url-input');
 
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    window.location.href = '404.html';
+});
+
+aiModeBtn.addEventListener('click', () => {
     window.location.href = '404.html';
 });
 

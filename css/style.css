@@ -53,10 +53,39 @@ body {
 }
 
 .icon-btn {
+    position: relative;
     background: none;
     border: none;
     font-size: 18px;
+    color: #5f6368;
+    padding: 8px;
+    border-radius: 50%;
     cursor: pointer;
+}
+
+.icon-btn:hover {
+    background-color: #f1f3f4;
+}
+
+.icon-btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #202124;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+
+.icon-btn:hover::after {
+    opacity: 1;
 }
 
 .ai-mode-btn {
