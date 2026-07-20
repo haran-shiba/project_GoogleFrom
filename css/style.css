@@ -229,4 +229,21 @@ body {
     .logo {
         font-size: 50px;
     }
+
+    .search-bar {
+        gap: 6px;
+        padding: 12px 16px;
+    }
+
+    .icon-btn {
+        padding: 6px;
+    }
+
+    .ai-mode-btn {
+        padding: 8px 10px;
+    }
+
+    .ai-mode-label {
+        display: none;
+    }
 }
